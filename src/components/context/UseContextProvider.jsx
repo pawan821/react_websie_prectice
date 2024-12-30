@@ -2,6 +2,7 @@
 import axios from '../../unitls/axiosconfig';
 import React, { Children, useEffect, useState } from 'react'
 export const userContext = React.createContext();
+
 const UseContextProvider = ({ children }) => {
     
   const [product, setproduct] = useState([]);
@@ -31,4 +32,4 @@ const UseContextProvider = ({ children }) => {
     </userContext.Provider>
   )
 }
-export default UseContextProvider
+export default UseContextProvider;

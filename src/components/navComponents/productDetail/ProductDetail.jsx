@@ -33,8 +33,12 @@ const ProductDetail = () => {
           <p className='text-xl font-extrabold'>Price: ${item.price}</p>
         </div>
       </div>
+      <div className='mt-5 flex gap-10'>
+        <i class="ri-arrow-left-s-line text-3xl p-3" onClick={() => navigate(-1)}></i>
+        <i class="ri-arrow-right-s-line text-3xl p-3" onClick={() => navigate(+1)}></i>
+      </div>
     </div>
   )
 }
 
-export default ProductDetail
+export default ProductDetail;
